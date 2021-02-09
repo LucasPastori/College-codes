@@ -1,0 +1,280 @@
+LX51 CODE BANKING LINKER/LOCATOR V06.18.15.328                                 11/20/20  11:28:22
+MS-DOS LX51 CODE BANKING LINKER/LOCATOR V06.18.15.328,  INVOKED BY:
+C:\Raisonance\Ride\Bin\LX51.EXE D:\Users\Pastori\Desktop\MicroContr\Projeto\Projeto_Sem·foro.obj &
+TO(D:\Users\Pastori\Desktop\MicroContr\Projeto\Semaforo.aof) LIBPATH(C:\Raisonance\Ride\Lib\51) G&
+ENERATEDEPFILE MAP IX RS(256) RSI(128) CSIZE(65536) XSIZE(65536) DEFN(XSTACKLEN,256) DEFN(TIM1_IN&
+IT,E8h) CO(0) DT(0) ID(0) XD(0) BI(0) ABSCODEOFFS(0) XMLM(No,D:\Users\Pastori\Desktop\MicroContr\&
+Projeto\Semaforo-modules.Standard.xml) XMLF(No,8000,D:\Users\Pastori\Desktop\MicroContr\Projeto\S&
+emaforo-flash.Standard.xml) 
+
+
+INPUT MODULES INCLUDED
+  D:\USERS\PASTORI\DESKTOP\MICROCONTR\PROJETO\PROJETO_SEM·FORO.OBJ(PROJETO_SEM·FORO)
+
+***WARNING 21: EMPTY RELOCATABLE SEGMENT
+   -SEGMENT: ?PR?PROJETO_SEM·FORO(PROJETO_SEM·FORO)
+
+
+LINK MAP OF MODULE: D:\USERS\PASTORI\DESKTOP\MICROCONTR\PROJETO\SEMAFORO.AOF (SEMAFORO)
+
+    TYPE     BASE       LENGTH    RELOCATION     SEGMENT NAME
+    ----     ----       ------    ----------     ------------
+
+    * * * * * * *   DATA/IDATA    M E M O R Y   * * * * * * *
+    REG      0000H      0008H     ABSOLUTE       "REG BANK 0"
+
+    * * * * * * *   CODE          M E M O R Y   * * * * * * *
+    CODE     0000H      0003H     ABSOLUTE       
+             0003H      0008H                    *** GAP ***
+    CODE     000BH      0009H     ABSOLUTE       
+             0014H      001FH                    *** GAP ***
+    CODE     0033H      000DH     ABSOLUTE       
+             0040H      00C0H                    *** GAP ***
+    CODE     0100H      0019H     ABSOLUTE       
+             0119H      00E7H                    *** GAP ***
+    CODE     0200H      008EH     ABSOLUTE       
+             028EH      0072H                    *** GAP ***
+    CODE     0300H      0030H     ABSOLUTE       
+             0330H      01D0H                    *** GAP ***
+    CODE     0500H      000FH     ABSOLUTE       
+
+EXECUTABLE SUMMARY:
+-------------------
+    Total INTERNAL RAM storage requirement:  0008H (8)
+    Total EXTERNAL RAM storage requirement:  0000H (0)
+    Total     CODE     storage requirement:  00FFH (255)
+Note:  Summary does not include dynamic stack requirements
+
+
+REFERENCE MAP OF MODULE: D:\USERS\PASTORI\DESKTOP\MICROCONTR\PROJETO\SEMAFORO.AOF (SEMAFORO)
+
+SEGMENT                           BI_GROUP            DT_GROUP             ID_GROUP             XD_GROUP
+  +--> CALLED SEGMENT          START    LENGTH     START    LENGTH     START    LENGTH     START    LENGTH
+--------------------------------------------------------------------------------------
+
+SYMBOL TABLE FOR D:\USERS\PASTORI\DESKTOP\MICROCONTR\PROJETO\SEMAFORO.AOF(PROJETO_SEM·FORO)
+--------------------------------------------------------------------------------------------
+
+    VALUE              TYPE               NAME
+    -----              ----               ----
+
+	-------            MODULE             PROJETO_SEM·FORO
+	C:0318H            SYMBOL             ESTADO_10
+	D:0082H            SYMBOL             DPL
+	D:0080H            SYMBOL             P0
+	C:0266H            SYMBOL             SN
+	C:0100H            SYMBOL             INIC_HARD
+	C:024EH            SYMBOL             SENSOR_NORTE
+	C:031EH            SYMBOL             ESTADO_20
+	D:0090H            SYMBOL             P1
+	C:024CH            SYMBOL             VL
+	D:00F0H            SYMBOL             B
+	D:00A0H            SYMBOL             P2
+	C:0324H            SYMBOL             ESTADO_40
+	C:0274H            SYMBOL             PEDESTRE_NORTE
+	B:00BCH            SYMBOL             PS
+	D:0081H            SYMBOL             SP
+	D:00B0H            SYMBOL             P3
+	C:026BH            SYMBOL             VN
+	B:00B4H            SYMBOL             T0
+	B:00D6H            SYMBOL             AC
+	C:0235H            SYMBOL             SALTA_1
+	B:009CH            SYMBOL             REN
+	B:00B5H            SYMBOL             T1
+	B:00D2H            SYMBOL             OV
+	C:0109H            SYMBOL             INIC_T0
+	B:00AFH            SYMBOL             EA
+	C:032AH            SYMBOL             ESTADO_80
+	D:00E0H            SYMBOL             ACC
+	C:023DH            SYMBOL             AMARELO_NORTE
+	C:0211H            SYMBOL             SALTA_5
+	B:00B6H            SYMBOL             WR
+	B:00A9H            SYMBOL             ET0
+	B:00ABH            SYMBOL             ET1
+	B:008DH            SYMBOL             TF0
+	B:008FH            SYMBOL             TF1
+	C:0223H            SYMBOL             SALTA_8
+	B:009AH            SYMBOL             RB8
+	D:008CH            SYMBOL             TH0
+	B:00A8H            SYMBOL             EX0
+	B:0088H            SYMBOL             IT0
+	D:008DH            SYMBOL             TH1
+	C:0011H            SYMBOL             CONTAGEM
+	C:0033H            SYMBOL             START
+	B:009BH            SYMBOL             TB8
+	B:00B0H            SYMBOL             RXD
+	B:00AAH            SYMBOL             EX1
+	B:008AH            SYMBOL             IT1
+	D:00A8H            SYMBOL             IE
+	B:009FH            SYMBOL             SM0
+	B:00B1H            SYMBOL             TXD
+	B:00D0H            SYMBOL             P
+	D:0099H            SYMBOL             SBUF
+	D:008AH            SYMBOL             TL0
+	D:0087H            SYMBOL             PCON
+	C:0306H            SYMBOL             ESTADO_2
+	B:009EH            SYMBOL             SM1
+	D:008BH            SYMBOL             TL1
+	C:027EH            SYMBOL             VLP
+	C:0255H            SYMBOL             VERDE_LESTE
+	B:009DH            SYMBOL             SM2
+	C:030CH            SYMBOL             ESTADO_4
+	D:0098H            SYMBOL             SCON
+	C:028BH            SYMBOL             VNP
+	B:00B9H            SYMBOL             PT0
+	D:0089H            SYMBOL             TMOD
+	D:0088H            SYMBOL             TCON
+	B:00BBH            SYMBOL             PT1
+	B:00D3H            SYMBOL             RS0
+	C:026DH            SYMBOL             SENSOR_LESTE
+	C:0500H            SYMBOL             VERIFICA_CONTAGEM
+	B:00B7H            SYMBOL             RD
+	B:008CH            SYMBOL             TR0
+	B:00D4H            SYMBOL             RS1
+	B:00D5H            SYMBOL             F0
+	C:0312H            SYMBOL             ESTADO_8
+	C:050CH            SYMBOL             T_1S
+	B:008EH            SYMBOL             TR1
+	C:0281H            SYMBOL             PEDESTRE_LESTE
+	C:0224H            SYMBOL             CONTA_1S
+	B:00B8H            SYMBOL             PX0
+	B:00ACH            SYMBOL             ES
+	B:00BAH            SYMBOL             PX1
+	D:00B8H            SYMBOL             IP
+	D:00D0H            SYMBOL             PSW
+	C:0300H            SYMBOL             VERIFICAR
+	B:0098H            SYMBOL             RI
+	B:00B2H            SYMBOL             INT0
+	C:0200H            SYMBOL             CONTA_5S
+	B:00B3H            SYMBOL             INT1
+	B:00D7H            SYMBOL             CY
+	D:0083H            SYMBOL             DPH
+	C:025CH            SYMBOL             AMARELO_LESTE
+	C:0236H            SYMBOL             VERDE_NORTE
+	B:0099H            SYMBOL             TI
+	C:0506H            SYMBOL             T_8S
+	B:0089H            SYMBOL             IE0
+	C:0247H            SYMBOL             SL
+	C:0212H            SYMBOL             CONTA_8S
+	B:008BH            SYMBOL             IE1
+	C:0000H            LINE#              5
+	C:000BH            LINE#              8
+	C:000EH            LINE#              9
+	C:0011H            LINE#              11
+	C:0500H            LINE#              15
+	C:0503H            LINE#              16
+	C:0506H            LINE#              18
+	C:0509H            LINE#              19
+	C:050CH            LINE#              21
+	C:0300H            LINE#              25
+	C:0303H            LINE#              26
+	C:0306H            LINE#              28
+	C:0309H            LINE#              29
+	C:030CH            LINE#              31
+	C:030FH            LINE#              32
+	C:0312H            LINE#              34
+	C:0315H            LINE#              35
+	C:0318H            LINE#              37
+	C:031BH            LINE#              38
+	C:031EH            LINE#              40
+	C:0321H            LINE#              41
+	C:0324H            LINE#              43
+	C:0327H            LINE#              44
+	C:032AH            LINE#              46
+	C:032DH            LINE#              47
+	C:0100H            LINE#              51
+	C:0103H            LINE#              52
+	C:0106H            LINE#              53
+	C:0108H            LINE#              54
+	C:0109H            LINE#              56
+	C:010CH            LINE#              57
+	C:010FH            LINE#              58
+	C:0112H            LINE#              59
+	C:0115H            LINE#              60
+	C:0118H            LINE#              61
+	C:0200H            LINE#              65
+	C:0203H            LINE#              66
+	C:0206H            LINE#              67
+	C:0208H            LINE#              68
+	C:0209H            LINE#              69
+	C:020AH            LINE#              70
+	C:020BH            LINE#              71
+	C:020DH            LINE#              72
+	C:020FH            LINE#              73
+	C:0211H            LINE#              74
+	C:0212H            LINE#              77
+	C:0215H            LINE#              78
+	C:0218H            LINE#              79
+	C:021AH            LINE#              80
+	C:021BH            LINE#              81
+	C:021CH            LINE#              82
+	C:021DH            LINE#              83
+	C:021FH            LINE#              84
+	C:0221H            LINE#              85
+	C:0223H            LINE#              86
+	C:0224H            LINE#              89
+	C:0227H            LINE#              90
+	C:022AH            LINE#              91
+	C:022CH            LINE#              92
+	C:022DH            LINE#              93
+	C:022EH            LINE#              94
+	C:022FH            LINE#              95
+	C:0231H            LINE#              96
+	C:0233H            LINE#              97
+	C:0235H            LINE#              98
+	C:0236H            LINE#              101
+	C:0239H            LINE#              102
+	C:023BH            LINE#              103
+	C:023DH            LINE#              106
+	C:0240H            LINE#              107
+	C:0242H            LINE#              108
+	C:0245H            LINE#              109
+	C:0247H            LINE#              110
+	C:024AH            LINE#              111
+	C:024CH            LINE#              112
+	C:024EH            LINE#              115
+	C:0251H            LINE#              116
+	C:0253H            LINE#              117
+	C:0255H            LINE#              120
+	C:0258H            LINE#              121
+	C:025AH            LINE#              122
+	C:025CH            LINE#              125
+	C:025FH            LINE#              126
+	C:0261H            LINE#              127
+	C:0264H            LINE#              128
+	C:0266H            LINE#              129
+	C:0269H            LINE#              130
+	C:026BH            LINE#              131
+	C:026DH            LINE#              134
+	C:0270H            LINE#              135
+	C:0272H            LINE#              136
+	C:0274H            LINE#              139
+	C:0277H            LINE#              140
+	C:0279H            LINE#              141
+	C:027CH            LINE#              142
+	C:027EH            LINE#              143
+	C:0281H            LINE#              146
+	C:0284H            LINE#              147
+	C:0286H            LINE#              148
+	C:0289H            LINE#              149
+	C:028BH            LINE#              150
+	C:0033H            LINE#              154
+	C:0036H            LINE#              155
+	C:0039H            LINE#              156
+	C:003CH            LINE#              157
+	C:003EH            LINE#              158
+	-------            ENDMOD             PROJETO_SEM·FORO
+
+UNCALLED SEGMENTS:
+------------------
+    ?PR?PROJETO_SEM·FORO
+
+----------------------
+SUGGESTED OPTIMIZATION
+----------------------
+Warning: 120 (78H) data bytes in the range [00H-80H] are available for storage.
+         Consider using some of these for 'data' variables in your source files.
+
+
+LINK/LOCATE RUN COMPLETE, 1 WARNING  FOUND.
+

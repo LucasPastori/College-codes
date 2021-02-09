@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Semaforo'" Path=".\Semaforo.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="Semaforo" >
+	<ApplicationBuild Header="Semaforo" Extern=".\Semaforo.rapp" Path=".\Semaforo.rapp" OutputFile=".\Semaforo.aof" sate="98" />
+</Project>

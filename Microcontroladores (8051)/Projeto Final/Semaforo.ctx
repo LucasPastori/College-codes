@@ -1,0 +1,103 @@
+
+<Debug>
+	<Semaforo>
+		<CodeView TopRow="646" Focus="651" Selected="yes" >
+			<CodeReport>
+				<0>112</0>
+				<1>197</1>
+				<2>107</2>
+				<3>591</3>
+				<4>107</4>
+				<5>225</5>
+																												
+			</CodeReport>
+																				
+		</CodeView>
+		<Peripheral PaneID="2020374067" Selected="yes" />
+		<Peripheral PaneID="1920233566" Selected="yes" />
+		<SfrView Focus="0" TopRow="128" NbPerLine="8" PaneID="84875095" Selected="yes" />
+		<Peripheral PaneID="1920233567" Selected="yes" />
+		<Peripheral PaneID="1920233565" Selected="yes" />
+												
+	</Semaforo>
+	<Flags>
+		<Report>
+			<Def Header="FlagReport" NbCol="9" >
+				<Col Type="PT_BOOL" Header="Check" sizeCache="18" AutoSize="0" Edit="1" Sortable="1" Icon="C:\Raisonance\Ride\Config\Resources\check.bmp" />
+				<Col Type="PT_STRING" Header="Kind" sizeCache="DDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" />
+				<Col Type="PT_STRING" Header="KindID" sizeCache="DD" AutoSize="1" Edit="0" Sortable="1" Visible="0" />
+				<Col Type="PT_STRING" Header="Space" sizeCache="DDDDDD" AutoSize="1" Edit="0" Sortable="1" />
+				<Col Type="PT_STRING" Header="SpaceID" sizeCache="DD" AutoSize="0" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Line" sizeCache="DDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" Visible="1" />
+				<Col Type="PT_STRING" Header="File" sizeCache="DDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" Visible="1" />
+				<Col Type="PT_STRING" Header="Path" sizeCache="DDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Condition" sizeCache="DDDDDDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="0" />
+				<Col Type="PT_STRING" Header="Condexpr" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+				<Col Type="PT_STRING" Header="Condcount" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+							
+			</Def>
+			<Rows>
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:9" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:26" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:29" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:32" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:35" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:38" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:41" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:44" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:47" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:103" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:112" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:117" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:122" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:131" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:136" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:143" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+				<Row Check="True" Kind="Breakpoint" KindID="0" Space="code" SpaceID="0" Condition="" Line="L:150" File="Projeto_Semáforo.a51" Path="D:\Users\Pastori\Desktop\MicroContr\Projeto_Semáforo.a51" />
+							
+			</Rows>
+					
+		</Report>
+			
+	</Flags>
+	<Views>
+		<View File="..\Projeto_Semáforo.a51" Line="150" Index="0" focus="1" />
+	</Views>
+	<BookMarks>
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+		<BookMark File="" Line="0" />
+	</BookMarks>
+	<Grep>
+		<GrepIncludeSub>yes</GrepIncludeSub>
+		<GrepMatchCase>no</GrepMatchCase>
+		<GrepMatchWhole>no</GrepMatchWhole>
+		<GrepRegExp>no</GrepRegExp>
+		<GrepReplaceMode>no</GrepReplaceMode>
+		<GrepFileTypes>
+			<GrepFileTypesValue>*.c;*.h</GrepFileTypesValue>
+			<GrepFileType>*.c;*.h</GrepFileType>
+		</GrepFileTypes>
+		<GrepFindWhat>
+			<GrepFindWhatValue/>
+		</GrepFindWhat>
+		<GrepFindWhere>
+			<GrepFindWhereValue>Application Files</GrepFindWhereValue>
+			<GrepPathStr>Application Files</GrepPathStr>
+			<GrepPathStr>Application Path</GrepPathStr>
+			<GrepPathStr>Project Files</GrepPathStr>
+		</GrepFindWhere>
+		<GrepReplaceWhat>
+			<GrepReplaceWhatValue/>
+		</GrepReplaceWhat>
+	</Grep>
+	<FindStrings/>
+	<ReplaceStrings/>
+</Debug>

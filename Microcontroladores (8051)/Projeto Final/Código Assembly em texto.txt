@@ -1,0 +1,162 @@
+;
+$include(REG51.inc)
+
+code at 0000h
+        ljmp START      
+code
+code at 000Bh
+        CJNE R6, #00h, Contagem
+        LJMP Verificar
+Contagem: 
+        LJMP Verifica_Contagem
+code
+code at 0500h
+Verifica_Contagem:
+        CJNE R5, #01h, T_8s
+        LJMP Conta_5s
+T_8s:
+        CJNE R5, #02h, T_1s
+        LJMP Conta_8s
+T_1s:     
+        LJMP Conta_1s
+code
+code at 0300h
+Verificar:
+        CJNE R7,#01h, Estado_2
+        LJMP Verde_Norte
+Estado_2:
+        CJNE R7, #02h, Estado_4
+        LJMP Amarelo_Norte
+Estado_4:
+        CJNE R7, #04h, Estado_8
+        LJMP Verde_Leste
+Estado_8:
+        CJNE R7, #08h, Estado_10
+        LJMP Amarelo_Leste
+Estado_10:
+        CJNE R7, #10h, Estado_20
+        LJMP Pedestre_Norte
+Estado_20:
+        CJNE R7, #20h, Estado_40
+        LJMP Sensor_Leste
+Estado_40:
+        CJNE R7, #40h, Estado_80
+        LJMP Pedestre_Leste
+Estado_80:
+        CJNE R7, #80h, Estado_4
+        LJMP Sensor_Norte
+code
+code at 0100h        
+INIC_HARD:       ; Inicia o sistema
+        MOV P1, #00h
+        MOV P0, #0FFh
+        MOV R7, #01h
+        RET
+INIC_T0:
+        MOV TMOD, #01h
+        MOV TH0, #0FFh
+        MOV TL0, #0FAh
+        MOV IE, #82h
+        MOV TCON, #10h
+        RET
+code
+code at 0200h
+Conta_5s:
+        MOV TH0, #3Ch
+        MOV TL0, #0Bh
+        MOV R5, #01h
+        INC R6
+        CLR C
+        MOV A, R6
+        SUBB A, #64h
+        JC SALTA_5
+        MOV R6, #00h
+SALTA_5: reti
+
+Conta_8s:
+        MOV TH0, #3Ch
+        MOV TL0, #0Bh
+        MOV R5, #02h
+        INC R6
+        CLR C
+        MOV A, R6
+        SUBB A, #0A0h
+        JC SALTA_8
+        MOV R6, #00h
+SALTA_8: reti
+
+Conta_1s:
+        MOV TH0, #3Ch
+        MOV TL0, #0Bh
+        MOV R5, #04h
+        INC R6
+        CLR C
+        MOV A, R6
+        SUBB A, #14h
+        JC SALTA_1
+        MOV R6, #00h
+SALTA_1: reti
+        
+Verde_Norte:     ; Acende o bit 0 do PORT1 por 5 segundos  (Estado 01h)
+        MOV P1, #21h
+        MOV R7, #02h
+        sjmp Conta_5s
+        
+Amarelo_Norte:   ; Acende o bit 1 do PORT1 por 1 segundos  (Estado 02h)
+        MOV P1, #22h
+        MOV R7, #04h
+        JB P0.2, SL
+        MOV R7, #10h
+SL:     JB P0.1, VL
+        MOV R7, #20h
+VL:     sjmp Conta_1s        
+  
+Sensor_Norte:    ; Acende o bit 0 do PORT1 por 8 segundos  (Estado 80h)
+        MOV P1, #21h
+        MOV R7, #02h
+        sjmp Conta_8s
+        
+Verde_Leste:     ; Acende o bit 3 do PORT1 por 5 segundos  (Estado 04h)
+        MOV P1, #0Ch
+        MOV R7, #08h
+        sjmp Conta_5s
+        
+Amarelo_Leste:   ; Acende o bit 4 do PORT1 por 1 segundos  (Estado 08h)
+        MOV P1, #14h
+        MOV R7, #01h
+        JB P0.2, SN
+        MOV R7, #40h
+SN:     JB P0.0, VN
+        MOV R7, #80h
+VN:     sjmp Conta_1s       
+        
+Sensor_Leste:    ; Acende o bit 3 do PORT1 por 8 segundos  (Estado 20h)
+        MOV P1, #0Ch
+        MOV R7, #08h
+        sjmp Conta_8s
+        
+Pedestre_Norte:  ; Acende os bits 2 e 5 do PORT1 por 5 segundos  (Estado 10h)
+        MOV P1, #24h
+        MOV R7, #04h
+        JB P0.1, VLP
+        MOV R7, #20h
+VLP:    ljmp Conta_5s
+        
+Pedestre_Leste:  ; Acende os bits 2 e 5 do PORT1 por 5 segundos  (Estado 40h)
+        MOV P1, #24h
+        MOV R7, #01h
+        JB P0.0, VNP
+        MOV R7, #80h
+VNP:    ljmp Conta_5s
+code       
+code at 0033h
+START:        
+        MOV SP, #70h
+        lcall INIC_HARD  
+        lcall INIC_T0    
+LOOP:
+        MOV R6, #00h
+        sjmp $
+        end
+code
+END
