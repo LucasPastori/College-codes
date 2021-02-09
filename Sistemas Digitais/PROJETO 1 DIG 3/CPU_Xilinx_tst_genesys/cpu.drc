@@ -1,0 +1,33 @@
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<3>/inst_Mram_mem3/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<3>/inst_Mram_mem3/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<2>/inst_Mram_mem2/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<2>/inst_Mram_mem2/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<1>/inst_Mram_mem1/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<1>/inst_Mram_mem1/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<0>/inst_Mram_mem/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<0>/inst_Mram_mem/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<4>/inst_Mram_mem4/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<4>/inst_Mram_mem4/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<7>/inst_Mram_mem7/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<7>/inst_Mram_mem7/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<6>/inst_Mram_mem6/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<6>/inst_Mram_mem6/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<5>/inst_Mram_mem5/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<5>/inst_Mram_mem5/C>
+   is incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 16 warnings.

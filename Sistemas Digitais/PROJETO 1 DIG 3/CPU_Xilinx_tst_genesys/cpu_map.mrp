@@ -1,0 +1,231 @@
+Release 9.2.04i Map J.40
+Xilinx Mapping Report File for Design 'cpu'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92\bin\nt\map.exe -ise
+C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise -intstyle ise -p
+xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -k 6 -o cpu_map.ncd
+cpu.ngd cpu.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -3
+Mapper Version : virtex5 -- $Revision: 1.36 $
+Mapped Date    : Tue Mar 14 10:42:35 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   16
+Slice Logic Utilization:
+  Number of Slice Registers:                   164 out of  28,800    1%
+    Number used as Flip Flops:                 163
+    Number used as Latch-thrus:                  1
+  Number of Slice LUTs:                        370 out of  28,800    1%
+    Number used as logic:                      336 out of  28,800    1%
+      Number using O6 output only:             310
+      Number using O5 output only:              18
+      Number using O5 and O6:                    8
+    Number used as Memory:                      32 out of   7,680    1%
+      Number used as Single Port RAM:           32
+        Number using O6 output only:            32
+    Number used as exclusive route-thru:         2
+  Number of route-thrus:                        23 out of  57,600    1%
+    Number using O6 output only:                19
+    Number using O5 output only:                 3
+    Number using O5 and O6:                      1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   131 out of   7,200    1%
+  Number of LUT Flip Flop pairs used:          407
+    Number with an unused Flip Flop:           243 out of     407   59%
+    Number with an unused LUT:                  37 out of     407    9%
+    Number of fully used LUT-FF pairs:         127 out of     407   31%
+    Number of unique control sets:              17
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        19 out of     480    3%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+
+Total equivalent gate count for design:  7,869
+Additional JTAG gate count for IOBs:  912
+Peak Memory Usage:  407 MB
+Total REAL time to MAP completion:  1 mins 20 secs 
+Total CPU time to MAP completion:   1 mins 15 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<3>/inst_Mram_mem3/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<3>/inst_Mram_mem3/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<2>/inst_Mram_mem2/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<2>/inst_Mram_mem2/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<1>/inst_Mram_mem1/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<1>/inst_Mram_mem1/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<0>/inst_Mram_mem/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<0>/inst_Mram_mem/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<4>/inst_Mram_mem4/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<4>/inst_Mram_mem4/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<7>/inst_Mram_mem7/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<7>/inst_Mram_mem7/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<6>/inst_Mram_mem6/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<6>/inst_Mram_mem6/C>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<5>/inst_Mram_mem5/A>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <b2v_inst/dataout<5>/inst_Mram_mem5/C>
+   is incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs in the
+   schematic.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| ch<0>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<1>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<2>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<3>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<4>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<5>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<6>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ch<7>                              | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| ck                                 | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| leds<0>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<1>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<2>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<3>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<4>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<5>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<6>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| leds<7>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| run                                | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ck_ | SETUP   |         N/A|     2.731ns|     N/A|           0
+  BUFGP                                     | HOLD    |     0.353ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.

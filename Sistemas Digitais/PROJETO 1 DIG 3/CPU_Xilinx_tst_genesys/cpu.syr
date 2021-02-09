@@ -1,0 +1,952 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: cpu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-3-ff1136
+
+---- Source Options
+Top Module Name                    : cpu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Library Search Order               : cpu.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ram.vhd" in Library work.
+Architecture behavioral of Entity ram is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ES.vhd" in Library work.
+Architecture behv of Entity es is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/mux_cpu.vhd" in Library work.
+Architecture behv of Entity mux_cpu is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/Pcounter.vhd" in Library work.
+Architecture behv of Entity pcounter is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/regs.vhd" in Library work.
+Architecture behv of Entity regs is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd" in Library work.
+Architecture fsm of Entity controle is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/prom.vhd" in Library work.
+Entity <prom> compiled.
+Entity <prom> (Architecture <behv>) compiled.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ALU_1.vhd" in Library work.
+Architecture behavioral of Entity alu_1 is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/debounce.vhd" in Library work.
+Architecture a of Entity debounce is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu.vhd" in Library work.
+Architecture bdf_type of Entity cpu is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <cpu> in library <work> (architecture <bdf_type>).
+
+Analyzing hierarchy for entity <ram> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <es> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <mux_cpu> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <pcounter> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <regs> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <controle> in library <work> (architecture <fsm>).
+
+Analyzing hierarchy for entity <prom> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <alu_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <a>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <cpu> in library <work> (Architecture <bdf_type>).
+Entity <cpu> analyzed. Unit <cpu> generated.
+
+Analyzing Entity <ram> in library <work> (Architecture <behavioral>).
+Entity <ram> analyzed. Unit <ram> generated.
+
+Analyzing Entity <es> in library <work> (Architecture <behv>).
+Entity <es> analyzed. Unit <es> generated.
+
+Analyzing Entity <mux_cpu> in library <work> (Architecture <behv>).
+Entity <mux_cpu> analyzed. Unit <mux_cpu> generated.
+
+Analyzing Entity <pcounter> in library <work> (Architecture <behv>).
+Entity <pcounter> analyzed. Unit <pcounter> generated.
+
+Analyzing Entity <regs> in library <work> (Architecture <behv>).
+Entity <regs> analyzed. Unit <regs> generated.
+
+Analyzing Entity <controle> in library <work> (Architecture <fsm>).
+INFO:Xst:1561 - "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd" line 99: Mux is complete : default of case is discarded
+Entity <controle> analyzed. Unit <controle> generated.
+
+Analyzing Entity <prom> in library <work> (Architecture <behv>).
+INFO:Xst:2679 - Register <tmp_rom<0>> in unit <prom> has a constant value of 0100101110101010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<1>> in unit <prom> has a constant value of 0100000100000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<2>> in unit <prom> has a constant value of 0100000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<3>> in unit <prom> has a constant value of 0100111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<4>> in unit <prom> has a constant value of 0011101100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<5>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<6>> in unit <prom> has a constant value of 0010001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<7>> in unit <prom> has a constant value of 0001001000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<8>> in unit <prom> has a constant value of 0011001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<9>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<10>> in unit <prom> has a constant value of 0010001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<11>> in unit <prom> has a constant value of 0001001100101001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<12>> in unit <prom> has a constant value of 0011001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<13>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<14>> in unit <prom> has a constant value of 0010010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<15>> in unit <prom> has a constant value of 0001010001001010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<16>> in unit <prom> has a constant value of 0011010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<17>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<18>> in unit <prom> has a constant value of 0010010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<19>> in unit <prom> has a constant value of 0001010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<20>> in unit <prom> has a constant value of 0011010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<21>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<22>> in unit <prom> has a constant value of 0010011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<23>> in unit <prom> has a constant value of 0001011000101100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<24>> in unit <prom> has a constant value of 0011011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<25>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<26>> in unit <prom> has a constant value of 0010011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<27>> in unit <prom> has a constant value of 0001011100101101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<28>> in unit <prom> has a constant value of 0011011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<29>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<30>> in unit <prom> has a constant value of 0011111100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<31>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<32>> in unit <prom> has a constant value of 0111111101110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<33>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<34>> in unit <prom> has a constant value of 1011000001101100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<35>> in unit <prom> has a constant value of 0111111100100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<36>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<37>> in unit <prom> has a constant value of 1011000000101101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<38>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<39>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<40>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<41>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<42>> in unit <prom> has a constant value of 0011001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<43>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<44>> in unit <prom> has a constant value of 1011000000101111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<45>> in unit <prom> has a constant value of 0011001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<46>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<47>> in unit <prom> has a constant value of 0111111100110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<48>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<49>> in unit <prom> has a constant value of 1011000000111001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<50>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<51>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<52>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<53>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<54>> in unit <prom> has a constant value of 0011001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<55>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<56>> in unit <prom> has a constant value of 1011000000111011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<57>> in unit <prom> has a constant value of 0011001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<58>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<59>> in unit <prom> has a constant value of 0111111101000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<60>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<61>> in unit <prom> has a constant value of 1011000001000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<62>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<63>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<64>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<65>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<66>> in unit <prom> has a constant value of 0011010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<67>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<68>> in unit <prom> has a constant value of 1011000001000111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<69>> in unit <prom> has a constant value of 0011010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<70>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<71>> in unit <prom> has a constant value of 0111111101010001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<72>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<73>> in unit <prom> has a constant value of 1011000001010001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<74>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<75>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<76>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<77>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<78>> in unit <prom> has a constant value of 0011010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<79>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<80>> in unit <prom> has a constant value of 1011000001010011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<81>> in unit <prom> has a constant value of 0011010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<82>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<83>> in unit <prom> has a constant value of 0111111101100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<84>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<85>> in unit <prom> has a constant value of 1011000001011101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<86>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<87>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<88>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<89>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<90>> in unit <prom> has a constant value of 0011011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<91>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<92>> in unit <prom> has a constant value of 1011000001011111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<93>> in unit <prom> has a constant value of 0011011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<94>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<95>> in unit <prom> has a constant value of 0111111101110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<96>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<97>> in unit <prom> has a constant value of 1011000001101001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<98>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<99>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<100>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<101>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<102>> in unit <prom> has a constant value of 0011011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<103>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<104>> in unit <prom> has a constant value of 1011000010110100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<105>> in unit <prom> has a constant value of 0011011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<106>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<107>> in unit <prom> has a constant value of 1011000010110100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<108>> in unit <prom> has a constant value of 0111111100100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<109>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<110>> in unit <prom> has a constant value of 1011000001110010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<111>> in unit <prom> has a constant value of 0011001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<112>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<113>> in unit <prom> has a constant value of 1011000001111000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<114>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<115>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<116>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<117>> in unit <prom> has a constant value of 0101001000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<118>> in unit <prom> has a constant value of 0011001000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<119>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<120>> in unit <prom> has a constant value of 0111111100110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<121>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<122>> in unit <prom> has a constant value of 1011000001111110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<123>> in unit <prom> has a constant value of 0011001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<124>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<125>> in unit <prom> has a constant value of 1011000010000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<126>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<127>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<128>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<129>> in unit <prom> has a constant value of 0101001100110011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<130>> in unit <prom> has a constant value of 0011001100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<131>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<132>> in unit <prom> has a constant value of 0111111101000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<133>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<134>> in unit <prom> has a constant value of 1011000010001010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<135>> in unit <prom> has a constant value of 0011010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<136>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<137>> in unit <prom> has a constant value of 1011000010010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<138>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<139>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<140>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<141>> in unit <prom> has a constant value of 0101010001000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<142>> in unit <prom> has a constant value of 0011010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<143>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<144>> in unit <prom> has a constant value of 0111111101010001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<145>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<146>> in unit <prom> has a constant value of 1011000010010110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<147>> in unit <prom> has a constant value of 0011010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<148>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<149>> in unit <prom> has a constant value of 1011000010011100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<150>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<151>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<152>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<153>> in unit <prom> has a constant value of 0101010101010101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<154>> in unit <prom> has a constant value of 0011010100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<155>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<156>> in unit <prom> has a constant value of 0111111101100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<157>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<158>> in unit <prom> has a constant value of 1011000010100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<159>> in unit <prom> has a constant value of 0011011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<160>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<161>> in unit <prom> has a constant value of 1011000010101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<162>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<163>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<164>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<165>> in unit <prom> has a constant value of 0101011001100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<166>> in unit <prom> has a constant value of 0100011000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<167>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<168>> in unit <prom> has a constant value of 0111111101110001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<169>> in unit <prom> has a constant value of 1110000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<170>> in unit <prom> has a constant value of 1011000010101110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<171>> in unit <prom> has a constant value of 0011011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<172>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<173>> in unit <prom> has a constant value of 1011000010110100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<174>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<175>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<176>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<177>> in unit <prom> has a constant value of 0101011101110111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<178>> in unit <prom> has a constant value of 0011011100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<179>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<180>> in unit <prom> has a constant value of 0011111100000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<181>> in unit <prom> has a constant value of 1111000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<182>> in unit <prom> has a constant value of 1011000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<183>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<184>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<185>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<186>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<187>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<188>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<189>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<190>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<191>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<192>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<193>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<194>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<195>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<196>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<197>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<198>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<199>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<200>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<201>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<202>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<203>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<204>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<205>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<206>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<207>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<208>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<209>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<210>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<211>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<212>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<213>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<214>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<215>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<216>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<217>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<218>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<219>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<220>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<221>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<222>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<223>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<224>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<225>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<226>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<227>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<228>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<229>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<230>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<231>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<232>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<233>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<234>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<235>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<236>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<237>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<238>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<239>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<240>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<241>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<242>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<243>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<244>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<245>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<246>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<247>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<248>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<249>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<250>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<251>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<252>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<253>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<254>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <tmp_rom<255>> in unit <prom> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+Entity <prom> analyzed. Unit <prom> generated.
+
+Analyzing Entity <alu_1> in library <work> (Architecture <behavioral>).
+Entity <alu_1> analyzed. Unit <alu_1> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <a>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ram>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ram.vhd".
+    Found 256x8-bit single-port RAM <Mram_memory> for signal <memory>.
+    Found 8-bit register for signal <dataout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ram> synthesized.
+
+
+Synthesizing Unit <es>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ES.vhd".
+    Found 8-bit register for signal <Leds>.
+    Found 8-bit register for signal <IO_entrada>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <es> synthesized.
+
+
+Synthesizing Unit <mux_cpu>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/mux_cpu.vhd".
+Unit <mux_cpu> synthesized.
+
+
+Synthesizing Unit <pcounter>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/Pcounter.vhd".
+    Found 8-bit up counter for signal <tmp_PC>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <pcounter> synthesized.
+
+
+Synthesizing Unit <regs>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/regs.vhd".
+    Found 8-bit register for signal <RFr1>.
+    Found 8-bit register for signal <RFr2>.
+    Found 8-bit 16-to-1 multiplexer for signal <$varindex0000> created at line 52.
+    Found 8-bit 16-to-1 multiplexer for signal <$varindex0001> created at line 65.
+    Found 128-bit register for signal <tmp_rf>.
+    Summary:
+	inferred 144 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <regs> synthesized.
+
+
+Synthesizing Unit <controle>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd".
+WARNING:Xst:647 - Input <Status_crtl<7:3>> is never used.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 51                                             |
+    | Transitions        | 67                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 50                                             |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <RFr1e_crtl>.
+    Found 1-bit register for signal <ENout_crtl>.
+    Found 3-bit register for signal <ALUop_crtl>.
+    Found 1-bit register for signal <PCclr_ctrl>.
+    Found 4-bit register for signal <RFr2a_crtl>.
+    Found 4-bit register for signal <RFr1a_crtl>.
+    Found 1-bit register for signal <Mre_ctrl>.
+    Found 1-bit register for signal <RFwe_crtl>.
+    Found 1-bit register for signal <ENin_crtl>.
+    Found 1-bit register for signal <WRram_crtl>.
+    Found 4-bit register for signal <RFwa_crtl>.
+    Found 2-bit register for signal <mux_crtl>.
+    Found 1-bit register for signal <PCload_crtl>.
+    Found 1-bit register for signal <RDram_crtl>.
+    Found 1-bit register for signal <PCinc_ctrl>.
+    Found 1-bit register for signal <RFr2e_crtl>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  28 D-type flip-flop(s).
+Unit <controle> synthesized.
+
+
+Synthesizing Unit <prom>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/prom.vhd".
+    Found 256x16-bit ROM for signal <$varindex0000> created at line 309.
+    Found 16-bit register for signal <instr>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <prom> synthesized.
+
+
+Synthesizing Unit <alu_1>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ALU_1.vhd".
+WARNING:Xst:1305 - Output <STATUS<7:3>> is never assigned. Tied to value 00000.
+    Found 1-bit register for signal <STATUS<2>>.
+    Found 1-bit register for signal <STATUS<0>>.
+    Found 8-bit comparator equal for signal <STATUS_0$cmp_eq0004> created at line 56.
+    Found 8-bit comparator greater for signal <STATUS_0$cmp_gt0000> created at line 52.
+    Found 8-bit comparator less for signal <STATUS_0$cmp_lt0000> created at line 61.
+    Found 9-bit register for signal <Temp>.
+    Found 9-bit adder for signal <Temp$add0000> created at line 47.
+    Found 1-bit xor2 for signal <Temp_0$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_1$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_2$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_3$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_4$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_5$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_6$xor0000> created at line 99.
+    Found 1-bit xor2 for signal <Temp_7$xor0000> created at line 99.
+    Found 8-bit subtractor for signal <Temp_7_0$sub0000> created at line 53.
+    Found 8-bit subtractor for signal <Temp_7_0$sub0001> created at line 63.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <alu_1> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/debounce.vhd".
+    Found 1-bit register for signal <pb_rise>.
+    Found 1-bit register for signal <cke>.
+    Found 20-bit up counter for signal <contador>.
+    Found 1-bit register for signal <pb_debounced>.
+    Found 1-bit register for signal <previous>.
+    Found 3-bit register for signal <SHIFT_PB>.
+    Found 1-bit register for signal <state>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <cpu>.
+    Related source file is "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu.vhd".
+Unit <cpu> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port RAM                             : 1
+# ROMs                                                 : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 3
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 57
+ 1-bit register                                        : 30
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 21
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 8-bit 16-to-1 multiplexer                             : 2
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <b2v_inst5/state> on signal <state[1:6]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000000
+ s1    | 000001
+ s2    | 000011
+ s3    | 000010
+ s4    | 000110
+ s4a   | 011110
+ s4b   | 011111
+ s5    | 000111
+ s5a   | 011101
+ s5b   | 011100
+ s6    | 000101
+ s6a   | 010100
+ s6b   | 010101
+ s7    | 000100
+ s7a   | 010111
+ s7b   | 010110
+ s8    | 001100
+ s8a   | 010010
+ s8b   | 010011
+ s9    | 001101
+ s9a   | 010001
+ s9b   | 010000
+ s9c   | 110000
+ s10   | 001111
+ s10a  | 110001
+ s10b  | 110011
+ s10c  | 110010
+ s11   | 001110
+ s11a  | 110110
+ s11b  | 110111
+ s11c  | 110101
+ s12   | 001010
+ s12a  | 110100
+ s12b  | 111100
+ s12c  | 111101
+ s13   | 001011
+ s13a  | 111111
+ s13b  | 111110
+ s13c  | 111010
+ s14   | 001001
+ s14a  | 111011
+ s14b  | 111001
+ s14c  | 111000
+ s15   | 001000
+ s16   | 011000
+ s16a  | 101000
+ s17   | 011001
+ s17a  | 101001
+ s18   | 011011
+ s18a  | 101011
+ s19   | 011010
+-------------------
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment C:\Xilinx92i.
+INFO:Xst:2664 - HDL ADVISOR - Unit <ram> : The RAM <Mram_memory> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <Addram>        |          |
+    |     diA            | connected to signal <datain>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 256x8-bit single-port distributed RAM                 : 1
+# ROMs                                                 : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 3
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 237
+ Flip-Flops                                            : 237
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 16
+ 1-bit 16-to-1 multiplexer                             : 16
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cpu> ...
+
+Optimizing unit <regs> ...
+
+Optimizing unit <controle> ...
+
+Optimizing unit <prom> ...
+
+Optimizing unit <alu_1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 265
+ Flip-Flops                                            : 265
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : cpu.ngr
+Top Level Output File Name         : cpu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 606
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 19
+#      LUT2                        : 32
+#      LUT3                        : 31
+#      LUT4                        : 29
+#      LUT5                        : 54
+#      LUT6                        : 243
+#      MUXCY                       : 48
+#      MUXF7                       : 80
+#      MUXF8                       : 15
+#      VCC                         : 1
+#      XORCY                       : 50
+# FlipFlops/Latches                : 265
+#      FDC                         : 57
+#      FDCE                        : 186
+#      FDE                         : 11
+#      FDP                         : 6
+#      FDPE                        : 5
+# RAMS                             : 8
+#      RAM256X1S                   : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 10
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            265  out of  28800     0%  
+ Number of Slice LUTs:                 443  out of  28800     1%  
+    Number used as Logic:              411  out of  28800     1%  
+    Number used as Memory:              32  out of   7680     0%  
+       Number used as RAM:              32
+
+Slice Logic Distribution: 
+ Number of Bit Slices used:            568
+   Number with an unused Flip Flop     303  out of    568    53%  
+   Number with an unused LUT:          125  out of    568    22%  
+   Number of fully used Bit Slices:    140  out of    568    24%  
+
+IO Utilization: 
+ Number of IOs:                         19
+ Number of bonded IOBs:                 19  out of    480     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:               1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ck                                 | BUFGP                  | 273   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------+----------------------------+-------+
+Control Signal                                       | Buffer(FF name)            | Load  |
+-----------------------------------------------------+----------------------------+-------+
+b2v_inst5/PCclr_ctrl(b2v_inst5/PCclr_ctrl:Q)         | NONE(b2v_inst3/tmp_PC_2)   | 8     |
+b2v_inst1/Leds_Acst_inv(b2v_inst7/reset_inv1_INV_0:O)| NONE(b2v_inst4/tmp_rf_12_1)| 246   |
+-----------------------------------------------------+----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.044ns (Maximum Frequency: 328.537MHz)
+   Minimum input arrival time before clock: 1.513ns
+   Maximum output required time after clock: 2.520ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ck'
+  Clock period: 3.044ns (frequency: 328.537MHz)
+  Total number of paths / destination ports: 5586 / 537
+-------------------------------------------------------------------------
+Delay:               3.044ns (Levels of Logic = 5)
+  Source:            b2v_inst4/RFr2_2 (FF)
+  Destination:       b2v_inst7/STATUS_0 (FF)
+  Source Clock:      ck rising
+  Destination Clock: ck rising
+
+  Data Path: b2v_inst4/RFr2_2 to b2v_inst7/STATUS_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.346   0.806  b2v_inst4/RFr2_2 (b2v_inst4/RFr2_2)
+     LUT6:I0->O            1   0.080   0.348  b2v_inst7/STATUS_0_cmp_lt00002 (b2v_inst7/STATUS_0_cmp_lt00001)
+     LUT5:I4->O            9   0.080   0.379  b2v_inst7/STATUS_0_cmp_lt00001 (b2v_inst7/STATUS_0_cmp_lt00002)
+     LUT5:I4->O            3   0.080   0.417  b2v_inst7/STATUS_0_cmp_lt000021 (b2v_inst7/STATUS_0_cmp_lt0000)
+     LUT6:I4->O            1   0.080   0.348  b2v_inst7/STATUS_0_mux0001194 (b2v_inst7/STATUS_0_mux0001_map50)
+     LUT4:I3->O            1   0.080   0.000  b2v_inst7/STATUS_0_mux0001229 (b2v_inst7/STATUS_0_mux0001)
+     FDC:D                    -0.024          b2v_inst7/STATUS_0
+    ----------------------------------------
+    Total                      3.044ns (0.746ns logic, 2.298ns route)
+                                       (24.5% logic, 75.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ck'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              1.513ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst8/SHIFT_PB_0 (FF)
+  Destination Clock: ck rising
+
+  Data Path: rst to b2v_inst8/SHIFT_PB_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.611   0.413  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            3   0.080   0.243  b2v_inst8/SHIFT_PB_0_and00001 (b2v_inst8/SHIFT_PB_0_and0000)
+     FDE:CE                    0.166          b2v_inst8/SHIFT_PB_2
+    ----------------------------------------
+    Total                      1.513ns (0.857ns logic, 0.656ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ck'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.520ns (Levels of Logic = 1)
+  Source:            b2v_inst1/Leds_7 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      ck rising
+
+  Data Path: b2v_inst1/Leds_7 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.346   0.235  b2v_inst1/Leds_7 (b2v_inst1/Leds_7)
+     OBUF:I->O                 1.939          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      2.520ns (2.285ns logic, 0.235ns route)
+                                       (90.7% logic, 9.3% route)
+
+=========================================================================
+CPU : 18.17 / 18.25 s | Elapsed : 18.00 / 18.00 s
+ 
+--> 
+
+Total memory usage is 319020 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :  258 (   0 filtered)
+

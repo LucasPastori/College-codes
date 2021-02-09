@@ -1,0 +1,61 @@
+ command line:
+   ./tb_cpu_1_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  4717
+
+Thu Apr 16 19:10:05 2020
+
+Total Line Count : 704
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 152.682 Meg. 
+
+ Total Signals          : 126
+ Total Nets             : 6442
+ Total Signal Drivers   : 49
+ Total Blocks           : 16
+ Total Primitive Blocks : 10
+ Total Processes        : 29
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 6597
+ntrace select -o on -n /tb_cpu_1/ck 
+ntrace select -o on -n /tb_cpu_1/rst 
+ntrace select -o on -n /tb_cpu_1/run 
+ntrace select -o on -n /tb_cpu_1/ch 
+ntrace select -o on -n /tb_cpu_1/leds 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst3/pcout 
+ntrace select -o on -n /tb_cpu_1/UUT/rega 
+ntrace select -o on -n /tb_cpu_1/UUT/regb 
+ntrace select -o on -n /tb_cpu_1/UUT/regc 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/tmp_rf 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst8/cke 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst5/state 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst7/status 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst/memory 
+ntrace select -o on -n /tb_cpu_1/UUT/run_en 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/rfr2a 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst8/pb_rise 
+ntrace select -o on -n /tb_cpu_1/UUT/instr 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/rfwa 
+ntrace select -o on -n /tb_cpu_1/UUT/rfw 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/rfr1a 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/rfr1 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst4/rfr2 
+ntrace select -o on -n /tb_cpu_1/UUT/b2v_inst7/alu_op 
+ntrace start 
+isimrun 320000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING:Simulator:29 - at 500.000 ns(1): Warning: There is an
+   'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+WARNING:Simulator:29 - at 500.000 ns(1): Warning: CONV_INTEGER: There is an
+   'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+ Simulation time 0.125 sec.
+
+ Estimate current memory usage : 162.931 Meg. 
+
+Thu Apr 16 22:12:49 2020
+

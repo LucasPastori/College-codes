@@ -1,0 +1,114 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+---- Uncomment the following library declaration if instantiating
+---- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity cofre is
+port 
+( clock, reset : in std_logic;
+  ativa, desativa, dez, unid : in std_logic;
+  unlocked, locked, blocked : out std_logic;
+  tentativas, dezena, unidade : out integer
+);
+end cofre;
+
+architecture Behavioral of cofre is
+
+signal unlk, lkd, blk, acertou : std_logic;
+signal cdez, cuni, tent, auxcdez, auxcuni : integer;
+
+begin
+process (clock, reset)
+begin
+
+if reset = '0' then
+  
+  unlk<='1'; lkd<='0'; blk<='0'; acertou<='0'; cdez<=0; cuni<=0; tent<=0; auxcdez<=0; auxcuni<=0;
+
+elsif clock'event and clock='1' then
+
+--unlocked
+if ativa = '1' then
+unlk<='0';
+elsif acertou = '1' and lkd= '1' then
+unlk<='1';
+end if;
+--locked
+if ativa= '1' and unlk = '1' then
+lkd<='1';
+elsif acertou = '1' and lkd = '1' then
+lkd<='0';
+elsif tent = 6 and lkd = '1' then
+lkd<='0';
+end if;
+--dezena
+if cdez = 9 then
+cdez<= 0;
+elsif unlk = '1' then
+cdez<= 0;
+elsif lkd= '1' and dez = '1' and cdez < 9 then
+cdez<= cdez+1;
+end if;
+--unidade
+if cuni = 9 then
+cuni<= 0;
+elsif unlk = '1' then
+cuni<= 0;
+elsif lkd= '1' and unid = '1' and cuni < 9 then
+cuni<= cuni+1;
+end if;
+--auxcuni
+if auxcuni = 9 then
+auxcuni<= 0;
+elsif unlk = '1' then
+auxcuni<= 0;
+elsif lkd= '1' and unid = '1' and cuni < 9 then
+auxcuni<= auxcuni+1;
+end if;
+--auxcdez
+if auxcdez = 9 then
+auxcdez<= 0;
+elsif unlk = '1' then
+auxcdez<= 0;
+elsif lkd= '1' and dez = '1' and auxcdez < 9 then
+auxcdez<= auxcdez+1;
+end if;
+--acertou
+if desativa = '1' and cdez>2 and cuni>4 and auxcdez<4 and auxcuni<6 then
+acertou<='1';
+elsif acertou = '1' and lkd = '1' then
+acertou<='0';
+elsif unlk = '1' then
+acertou<='0';
+end if;  
+--tentativas
+if unlk = '1' then
+tent<=0;
+elsif tent= 6 then
+tent<=0;
+elsif acertou = '1' then
+tent<=0;
+elsif desativa = '1' and acertou = '0' and blk = '0' then
+tent<=tent+1;
+end if;
+--blocked
+if tent = 6 and lkd = '1' then
+blk<='1';
+end if;
+
+end if;
+end process;
+
+unlocked<=unlk;
+locked<=lkd;
+blocked<=blk;
+tentativas<=tent;
+unidade<=cuni;
+dezena<=cdez;
+
+end Behavioral;

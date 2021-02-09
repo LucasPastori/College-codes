@@ -1,0 +1,22 @@
+NET "rst" LOC="E7";	   #Reset
+NET "ck" LOC="AG18";    # clock
+#comandos push-buttons
+NET "run" LOC="G7";		#BTN1	
+#comandos switches
+NET "ch(7)" LOC="G15";	#SW7
+NET "ch(6)" LOC="G16";	#SW6
+NET "ch(5)" LOC="K17";	#SW5
+NET "ch(4)" LOC="H17";	#SW4
+NET "ch(3)" LOC="H18";	#SW3
+NET "ch(2)" LOC="K18";	#SW2 a
+NET "ch(1)" LOC="L18";	#SW1
+NET "ch(0)" LOC="J19";	#SW0 
+#LEDs 
+NET "leds(7)" LOC="AE11";	#LED7
+NET "leds(6)" LOC="AF11";	#LED6
+NET "leds(5)" LOC="AG11";	#LED5
+NET "leds(4)" LOC="AH10";	#LED4
+NET "leds(3)" LOC="AG10";	#LED3
+NET "leds(2)" LOC="AH9";	#LED2
+NET "leds(1)" LOC="AH8"; 	#LED1
+NET "leds(0)" LOC="AG8";	#LED0

@@ -1,0 +1,3 @@
+MODULE tb_cpu_1
+SUBMODULE cpu
+INSTANCE UUT

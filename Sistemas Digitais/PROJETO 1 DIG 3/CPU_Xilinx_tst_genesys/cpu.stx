@@ -1,0 +1,60 @@
+Release 9.2.04i - xst J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.50 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/cpu is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/cpu.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu.vhd".
+WARNING:HDLParsers:3607 - Unit work/cpu/bdf_type is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/cpu.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_1 is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ALU_1.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ALU_1.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_1/Behavioral is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ALU_1.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ALU_1.vhd".
+WARNING:HDLParsers:3607 - Unit work/ES is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ES.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ES.vhd".
+WARNING:HDLParsers:3607 - Unit work/ES/behv is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ES.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ES.vhd".
+WARNING:HDLParsers:3607 - Unit work/PCounter is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/Pcounter.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/Pcounter.vhd".
+WARNING:HDLParsers:3607 - Unit work/PCounter/behv is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/Pcounter.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/Pcounter.vhd".
+WARNING:HDLParsers:3607 - Unit work/controle is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/controle.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/controle.vhd".
+WARNING:HDLParsers:3607 - Unit work/controle/fsm is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/controle.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/controle.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/debounce.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce/a is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/debounce.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux_cpu is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/mux_cpu.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/mux_cpu.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux_cpu/behv is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/mux_cpu.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/mux_cpu.vhd".
+WARNING:HDLParsers:3607 - Unit work/prom is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/prom.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/prom.vhd".
+WARNING:HDLParsers:3607 - Unit work/prom/behv is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/prom.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/prom.vhd".
+WARNING:HDLParsers:3607 - Unit work/RAM is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ram.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/RAM/behavioral is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ram.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/regs is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/regs.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/regs.vhd".
+WARNING:HDLParsers:3607 - Unit work/regs/behv is now defined in a different file.  It was defined in "//vboxsrv/documents/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/regs.vhd", and is now defined in "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/regs.vhd".
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ram.vhd" in Library work.
+Architecture behavioral of Entity ram is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ES.vhd" in Library work.
+Architecture behv of Entity es is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/mux_cpu.vhd" in Library work.
+Architecture behv of Entity mux_cpu is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/Pcounter.vhd" in Library work.
+Architecture behv of Entity pcounter is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/regs.vhd" in Library work.
+Architecture behv of Entity regs is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/controle.vhd" in Library work.
+Architecture fsm of Entity controle is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/prom.vhd" in Library work.
+Entity <prom> compiled.
+Entity <prom> (Architecture <behv>) compiled.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ALU_1.vhd" in Library work.
+Architecture behavioral of Entity alu_1 is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/debounce.vhd" in Library work.
+Architecture a of Entity debounce is up to date.
+Compiling vhdl file "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu.vhd" in Library work.
+Architecture bdf_type of Entity cpu is up to date.
+CPU : 0.59 / 1.09 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 185028 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,159 @@
+V3 115
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/ALU_1.vhd 2016/12/14.10:38:07 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/controle.vhd 2016/12/14.10:37:17 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu.vhd 2011/08/30.16:03:10 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/debounce.vhd 2017/03/14.09:09:36 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/ES.vhd 2016/12/14.12:18:05 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/mux_cpu.vhd 2011/08/20.19:48:40 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/Pcounter.vhd 2016/12/14.10:34:39 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/prom.vhd 2016/12/14.17:42:12 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/ram.vhd 2016/12/14.10:59:54 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/regs.vhd 2016/12/14.10:22:43 J.36
+FL C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/tb_cpu_1.vhw 2017/03/14.09:07:40 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/ALU_1.vhd 2011/08/20.17:56:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/controle.vhd 2011/08/30.15:34:02 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu.vhd 2011/08/30.16:03:10 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/debounce.vhd 2011/08/25.15:57:22 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/ES.vhd 2011/08/20.20:03:24 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/mux_cpu.vhd 2011/08/20.19:48:40 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/Pcounter.vhd 2011/08/19.17:03:51 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/prom.vhd 2011/08/30.16:07:48 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/ram.vhd 2011/08/02.16:44:06 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/regs.vhd 2011/07/22.16:55:35 J.36
+FL C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/tb_cpu_1.vhw 2011/08/30.16:15:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/ALU_1.vhd 2011/08/20.17:56:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/controle.vhd 2011/08/30.15:34:02 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu.vhd 2011/08/30.16:03:10 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/debounce.vhd 2011/09/22.09:19:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/ES.vhd 2011/08/20.20:03:24 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/mux_cpu.vhd 2011/08/20.19:48:40 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/Pcounter.vhd 2011/08/19.17:03:51 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/prom.vhd 2011/09/22.09:47:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/ram.vhd 2011/09/22.09:17:34 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/regs.vhd 2011/07/22.16:55:35 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/tb_cpu_1.vhw 2011/09/22.14:09:52 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/ALU_1.vhd 2011/10/04.16:51:30 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/controle.vhd 2011/09/22.16:29:25 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu.vhd 2011/08/30.16:03:10 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/debounce.vhd 2011/09/22.09:19:26 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/ES.vhd 2011/08/20.20:03:24 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/mux_cpu.vhd 2011/08/20.19:48:40 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/Pcounter.vhd 2011/08/19.17:03:51 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/prom.vhd 2011/09/23.14:04:58 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/ram.vhd 2011/09/22.09:17:34 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/regs.vhd 2011/07/22.16:55:35 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/tb_cpu_1.tfw 2011/10/04.16:54:36 J.36
+FL C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/tb_cpu_1.vhw 2011/09/23.14:13:01 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ALU_1.vhd 2019/03/21.17:07:52 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/controle.vhd 2019/03/21.17:07:52 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu.vhd 2019/03/21.17:07:52 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/debounce.vhd 2019/08/29.14:28:22 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ES.vhd 2019/03/21.17:07:53 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/mux_cpu.vhd 2019/03/21.17:07:53 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/Pcounter.vhd 2019/03/21.17:07:53 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/prom.vhd 2019/08/29.14:50:34 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/ram.vhd 2019/03/21.17:07:53 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/regs.vhd 2019/03/21.17:07:53 J.36
+FL C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/tb_cpu_1.vhw 2019/08/29.15:41:52 J.36
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ALU_1.vhd" 2019/03/21.17:07:54 J.36
+EN work/ALU_1 1585333944 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ALU_1.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/NUMERIC_STD 1132105543
+AR work/ALU_1/Behavioral 1585333945 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ALU_1.vhd" \
+      EN work/ALU_1 1585333944
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd" 2019/03/21.17:07:54 J.36
+EN work/controle 1585333940 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/controle/fsm 1585333941 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/controle.vhd" \
+      EN work/controle 1585333940
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu.vhd" 2019/03/21.17:07:54 J.36
+EN work/cpu 1585863508 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu.vhd" \
+      PB ieee/std_logic_1164 1132105529
+AR work/cpu/bdf_type 1585863509 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu.vhd" \
+      EN work/cpu 1585863508 CP ram CP es CP mux_cpu CP pcounter CP regs CP controle \
+      CP prom CP alu_1 CP debounce
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/debounce.vhd" 2019/08/29.14:28:24 J.36
+EN work/debounce 1585333946 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/debounce.vhd" \
+      PB ieee/std_logic_1164 1132105529
+AR work/debounce/a 1585333947 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/debounce.vhd" \
+      EN work/debounce 1585333946
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ES.vhd" 2019/03/21.17:07:54 J.36
+EN work/ES 1585333932 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ES.vhd" \
+      PB ieee/std_logic_1164 1132105529
+AR work/ES/behv 1585333933 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ES.vhd" \
+      EN work/ES 1585333932
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/mux_cpu.vhd" 2019/03/21.17:07:54 J.36
+EN work/mux_cpu 1585333934 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/mux_cpu.vhd" \
+      PB ieee/std_logic_1164 1132105529
+AR work/mux_cpu/behv 1585333935 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/mux_cpu.vhd" \
+      EN work/mux_cpu 1585333934
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/Pcounter.vhd" 2019/03/21.17:07:54 J.36
+EN work/PCounter 1585333936 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/Pcounter.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/PCounter/behv 1585333937 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/Pcounter.vhd" \
+      EN work/PCounter 1585333936
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/prom.vhd" 2020/04/02.18:38:19 J.36
+EN work/prom 1585863506 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/prom.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/prom/behv 1585863507 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/prom.vhd" \
+      EN work/prom 1585863506
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ram.vhd" 2019/03/21.17:07:54 J.36
+EN work/RAM 1585333930 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ram.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/RAM/behavioral 1585333931 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/ram.vhd" \
+      EN work/RAM 1585333930
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/regs.vhd" 2019/03/21.17:07:54 J.36
+EN work/regs 1585333938 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/regs.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/regs/behv 1585333939 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/regs.vhd" \
+      EN work/regs 1585333938
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/tb_cpu_1.tfw" 2020/04/16.00:12:23 J.36
+MO work/tb_cpu_1 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/tb_cpu_1.tfw" \
+      MI cpu
+FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/tb_cpu_1.vhw" 2020/04/02.16:05:19 J.36
+EN work/tb_cpu_1 -1 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/tb_cpu_1.vhw" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/STD_LOGIC_TEXTIO 1132105539 \
+      PB ieee/std_logic_arith 1132105531 PB ieee/STD_LOGIC_UNSIGNED 1132105537 \
+      PB std/textio 1132105521
+AR work/tb_cpu_1/testbench_arch -1 \
+      FL "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/tb_cpu_1.vhw" \
+      EN work/tb_cpu_1 -1 CP cpu
+FL $XILINX/verilog/src/glbl.v 2007/05/18.18:22:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ALU_1.vhd 2016/12/14.10:38:08 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/controle.vhd 2016/12/14.10:37:18 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/cpu.vhd 2011/08/30.16:03:12 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/debounce.vhd 2017/03/17.16:10:23 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ES.vhd 2016/12/14.12:18:06 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/mux_cpu.vhd 2011/08/20.19:48:42 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/Pcounter.vhd 2016/12/14.10:34:40 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/prom.vhd 2017/03/14.10:40:44 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/ram.vhd 2016/12/14.10:59:56 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/regs.vhd 2016/12/14.10:22:44 J.36
+FL E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/tb_cpu_1.vhw 2017/03/17.16:40:42 J.36

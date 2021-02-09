@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map 1.1 on Tue Mar 14 10:43:43 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ck" LOCATE = SITE "AG18" LEVEL 1;
+COMP "ch<0>" LOCATE = SITE "J19" LEVEL 1;
+COMP "ch<1>" LOCATE = SITE "L18" LEVEL 1;
+COMP "ch<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "run" LOCATE = SITE "G7" LEVEL 1;
+COMP "ch<3>" LOCATE = SITE "H18" LEVEL 1;
+COMP "rst" LOCATE = SITE "E7" LEVEL 1;
+COMP "ch<4>" LOCATE = SITE "H17" LEVEL 1;
+COMP "ch<5>" LOCATE = SITE "K17" LEVEL 1;
+COMP "ch<6>" LOCATE = SITE "G16" LEVEL 1;
+COMP "ch<7>" LOCATE = SITE "G15" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "AG8" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "AH8" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "AH9" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "AG10" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "AH10" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "AG11" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "AF11" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "AE11" LEVEL 1;
+SCHEMATIC END;

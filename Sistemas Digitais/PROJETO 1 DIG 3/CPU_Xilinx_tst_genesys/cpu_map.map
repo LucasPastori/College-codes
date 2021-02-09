@@ -1,0 +1,130 @@
+Release 9.2.04i Map J.40
+Xilinx Map Application Log File for Design 'cpu'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92\bin\nt\map.exe -ise
+C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise -intstyle ise -p
+xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -k 6 -o cpu_map.ncd
+cpu.ngd cpu.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -3
+Mapper Version : virtex5 -- $Revision: 1.36 $
+Mapped Date    : Tue Mar 14 10:42:35 2017
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:98b374) REAL time: 2 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 3 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 3 secs 
+
+Phase 4.33
+Phase 4.33 (Checksum:26259fc) REAL time: 3 secs 
+
+Phase 5.32
+Phase 5.32 (Checksum:2faf07b) REAL time: 3 secs 
+
+Phase 6.2
+
+Phase 6.2 (Checksum:39386fa) REAL time: 4 secs 
+
+Phase 7.30
+Phase 7.30 (Checksum:42c1d79) REAL time: 4 secs 
+
+Phase 8.3
+Phase 8.3 (Checksum:4c4b3f8) REAL time: 5 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 5 secs 
+
+Phase 10.8
+.................
+.......
+.............................................
+.......................................
+...............
+......................
+Phase 10.8 (Checksum:ad64e7) REAL time: 13 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:68e7775) REAL time: 13 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:7270df4) REAL time: 13 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:7bfa473) REAL time: 34 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:8583af2) REAL time: 34 secs 
+
+Phase 16.34
+Phase 16.34 (Checksum:98967f0) REAL time: 34 secs 
+
+REAL time consumed by placer: 34 secs 
+CPU  time consumed by placer: 32 secs 
+Inspecting route info ...
+Route info done.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   16
+Slice Logic Utilization:
+  Number of Slice Registers:                   164 out of  28,800    1%
+    Number used as Flip Flops:                 163
+    Number used as Latch-thrus:                  1
+  Number of Slice LUTs:                        370 out of  28,800    1%
+    Number used as logic:                      336 out of  28,800    1%
+      Number using O6 output only:             310
+      Number using O5 output only:              18
+      Number using O5 and O6:                    8
+    Number used as Memory:                      32 out of   7,680    1%
+      Number used as Single Port RAM:           32
+        Number using O6 output only:            32
+    Number used as exclusive route-thru:         2
+  Number of route-thrus:                        23 out of  57,600    1%
+    Number using O6 output only:                19
+    Number using O5 output only:                 3
+    Number using O5 and O6:                      1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   131 out of   7,200    1%
+  Number of LUT Flip Flop pairs used:          407
+    Number with an unused Flip Flop:           243 out of     407   59%
+    Number with an unused LUT:                  37 out of     407    9%
+    Number of fully used LUT-FF pairs:         127 out of     407   31%
+    Number of unique control sets:              17
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        19 out of     480    3%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+
+Total equivalent gate count for design:  7,869
+Additional JTAG gate count for IOBs:  912
+Peak Memory Usage:  407 MB
+Total REAL time to MAP completion:  1 mins 20 secs 
+Total CPU time to MAP completion:   1 mins 15 secs 
+
+Mapping completed.
+See MAP report file "cpu_map.mrp" for details.

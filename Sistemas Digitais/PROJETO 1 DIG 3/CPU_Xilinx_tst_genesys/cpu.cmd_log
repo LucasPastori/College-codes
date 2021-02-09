@@ -1,0 +1,125 @@
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s200-ft256-4 cpu.ngc cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/CPU_xilinx/cpu_1/cpu_1" -intstyle ise -e 3 -l 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc3s200-ft256-4 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 4 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+xst -ise "C:/Benko/FEI/SDIII/Proj2/Proj_processador_rtl/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tstsw/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+ngdbuild -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpu.ucf" -p xc5vlx50t-ff1136-3 "cpu.ngc" cpu.ngd
+map -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area  -k 6 -o cpu_map.ncd cpu.ngd cpu.pcf
+par -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -w -intstyle ise -ol std -t 1 cpu_map.ncd cpu.ncd cpu.pcf
+trce -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -e 3 -s 3 -xml cpu cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf
+bitgen -ise "C:/Benko/FEI/SDIII/Proj1/CPU_Xilinx_tst/cpu_1.ise" -intstyle ise -f cpu.ut cpu.ncd
+xst -ise "E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "E:/Benko/FEI/SDIII/Projeto1/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Professores/Benko/CPU_Xilinx_tst_genesys2/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
+xst -ise "C:/Users/Usuario/Desktop/PROJETO 1 DIG 3/CPU_Xilinx_tst_genesys/cpu_1.ise" -intstyle ise -ifn cpu.xst -ofn cpu.syr
