@@ -1,6 +1,0 @@
-def file_info(texto):
-
-
-        linha_separada  = linha.split(" ")
-
-        for palavras in palavras_separadas[i] :
